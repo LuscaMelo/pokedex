@@ -10,11 +10,11 @@ export default function Home({pokemon}) {
 
       <Layout>
         <div className={styles.titleGroup}>
-          <Image src="/../public/pokeball.png" width={70} height={70} className={styles.image}/>
+          <Image src="/../public/pokeball.png" alt="" width={70} height={70} className={styles.image}/>
           <h1 className={styles.title}>
             My Pokedex
           </h1>
-          <p className={styles.subtitle}>Click on a pokémon to see it's details</p>
+          <p className={styles.subtitle}>Click on a pokémon to see its details</p>
         </div>
 
         <hr className={styles.hr}/>

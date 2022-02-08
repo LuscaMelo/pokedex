@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 import Styles from '../../styles/Pokemon.module.css'
+import Image from 'next/image'
 
 export default function PokemonItem({pokemon}) {
     
@@ -9,7 +10,7 @@ export default function PokemonItem({pokemon}) {
     <Layout>
       <div className={Styles.container}>
         <div className={Styles.card}>
-          <img className={Styles.img} src={pokemon.image} />
+          <img alt="" className={Styles.img} src={pokemon.image} />
           <span>{"#"+ ("00" + pokemon.id).slice(-3)}</span>
           <h1 className={Styles.title}>{pokemon.name}</h1>
 
@@ -37,7 +38,7 @@ export default function PokemonItem({pokemon}) {
           </div>
         </div>
 
-        <Link href="/">
+        <Link href="/" passHref>
           <button className={Styles.button}>
             <a>
               <i className="fas fa-arrow-circle-left"></i>
