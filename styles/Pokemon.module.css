@@ -1,0 +1,156 @@
+.container {
+    background-image: linear-gradient(to right bottom, #1f2646, #22294a, #242c4d, #273051, #2a3355);
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 50px;
+    padding: 2rem 5rem;
+    border-radius: 3rem 8rem 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #343C63;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.041);
+}
+
+.card img {
+    width: 15em;
+    margin-top: -8rem;
+    margin-bottom: -15px;
+}
+
+.card span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(207, 207, 207);
+    background-color: rgba(238, 238, 238, 0.068);
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin: 0.5em 0;
+}
+
+.card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F7B916;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.line {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(179, 179, 179);
+}
+
+.line span {
+    background-color: transparent;
+    color: #F7B916;
+    margin: 0;
+    padding: 0;
+}
+
+.abilities {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(179, 179, 179);
+}
+
+.abilities button:first-child {
+    margin-right: 1em;
+}
+
+.abilities button {
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #1A4E3E;
+    border: none;
+    border-radius: 8px;
+    background-color: #44c194;
+}
+
+.abilities button:last-child {
+    margin-left: 1em;
+    background-color: #8D85D9;
+    color: #383759;
+}
+
+.button {
+    padding: 0.5em 1em;
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: #1f2646;
+    background-color: #F7B916;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.041);
+}
+
+.button:hover {
+    background-color: #e0a102;
+    transition: 0.8s;
+}
+
+.button i {
+    margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+    .button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 85%;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    .abilities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .abilities button {
+        width: 100px;
+        margin-top: 7px;
+    }
+
+    .abilities button:last-child {
+        margin-left: 0;
+    }
+
+    .abilities button:first-child {
+        margin-right: 0;
+    }
+}

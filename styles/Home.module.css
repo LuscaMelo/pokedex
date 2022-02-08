@@ -1,0 +1,141 @@
+.app {
+  background-image: linear-gradient(to right bottom, #1f2646, #22294a, #242c4d, #273051, #2a3355);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+.title a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  color: #F7B916;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(214, 214, 214);
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em 0 3rem 0;
+}
+
+.hr {
+  width: 150px;
+  margin-bottom: 4em;
+  height: 5px;
+  background-color: rgb(214, 214, 214);
+  border: none;
+  border-radius: 5px;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.listItem {
+  background-color: #343C63;
+  height: 200px;
+  margin: 1.3rem;
+  margin-bottom: 5.5rem;
+  padding-top: 1.5em;
+  text-align: center;
+  border-radius: 20px 60px 20px 60px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.041);
+}
+
+.listItem:hover {
+  padding: 0.1em 0;
+  transition: 0.8s;
+}
+
+.listItem img {
+  height: 180px;
+  margin-top: -110px;
+}
+
+.listItem div {
+  border-radius: 10px;
+}
+
+.listItem div span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(238, 238, 238, 0.068);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.listItem div h3 {
+  font-size: 1.3rem;
+  color: #F7B916;
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0;
+  }
+
+  .hr {
+    margin-bottom: 6em;
+  }
+
+  .listItem {
+    width: 400px;
+  }
+
+  .list {
+    padding: 0;
+    margin: 3%;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    padding: 0 5rem;
+    font-size: 1em;
+  }
+  
+  .titleGroup {
+    padding: 3rem 0;
+  }
+
+}
