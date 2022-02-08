@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 
@@ -10,7 +9,6 @@ export default function Home({pokemon}) {
 
       <Layout>
         <div className={styles.titleGroup}>
-          <Image src="/../public/pokeball.png" alt="" width={80} height={80} className={styles.image}/>
           <h1 className={styles.title}>
             My Pokedex
           </h1>
